@@ -12,4 +12,4 @@ http://creativecommons.org/licenses/by-nc-nd/4.0/
 
 ## Copyright
 © 2025 11Protocol.com All rights reserved. 
-The 11Protocol.com methodology, including the Sovereign Core architecture, Inference Control Layer, and Shepherd Model, is the intellectual property of 11Protocol.com
+The 11Protocol.com methodology, including the Sovereign Core architecture, Inference Control Layer, and Shepherd Model, is the intellectual property of [11Protocol.com](http://www.11Protocol.com)
