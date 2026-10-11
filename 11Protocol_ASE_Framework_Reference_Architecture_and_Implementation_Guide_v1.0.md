@@ -1,15 +1,14 @@
 ## 🛡️ LEGAL NOTICE
->By continuing to access or use this documnt, you acknowledge that you have read, understood, and agree to be bound by the 11Protocol [Licensing & Intellectual Property terms](https://github.com/11protocol/publications/tree/main?tab=License-1-ov-file).
+>By continuing to access or use this document, you acknowledge that you have read, understood, and agree to be bound by the 11Protocol [Licensing & Intellectual Property terms](https://github.com/11protocol/publications/tree/main?tab=License-1-ov-file).
 ---
 # 11Protocol Agentic Sovereign Enterprise (ASE) Framework
 ## Reference Architecture and Implementation Guide
 
-**Document status:** Internal reference standard
+**Document status:** Public Reference Standard
 **Version:** 1.0 working canonical model
 **Date:** September 2026
-**Purpose:** Provide the 11Protocol team with the concepts, relationships, operating logic, assessment model, maturity model, implementation guidance, risk model, and practical tools required to advise, direct, measure, and assure organizations progressing toward an Agentic Sovereign Enterprise.
-**Use:** Internal. This document is intended to be used as the principal reference when supporting ASE advisory and execution engagements.
-
+**Purpose:** Provide internal teams, external partners, and client organizations with the concepts, relationships, operating logic, assessment model, maturity model, implementation guidance, risk model, and practical tools required to advise, direct, measure, and assure organizations progressing toward an Agentic Sovereign Enterprise.
+**Use:** Implementation & Advisory Reference. This document is intended as the principal standard for both internal teams and external practice resources leading ASE advisory, architecture, and execution engagements.
 ---
 
 # 1. Purpose and North Star
