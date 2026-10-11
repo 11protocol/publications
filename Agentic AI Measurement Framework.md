@@ -71,12 +71,13 @@ A persistent pathology in enterprise engineering is confusing technical accuracy
 
 When metrics are integrated into organizational governance or automated control loops, they cease to function purely as observational tools and actively reshape the behavior of the system being measured.
 
-OPERATIONAL METRIC (Selected Proxy M) \---\> BEHAVIORAL SYSTEM (Agent or Human)  
-             |                                              |  
-             | Creates Divergence                           | Optimizes M via  
-             v                                              v Shortcuts  
+```
+OPERATIONAL METRIC (Selected Proxy M) ---> BEHAVIORAL SYSTEM (Agent or Human)
+|                                    |                                    |
+|                                    | Creates Divergence                 | Optimizes M via
+|                                    v                                    v Shortcuts
 SYSTEMIC FAILURE ZONE: Goodhart's Law / Kerr's Folly / McNamara Fallacy
-
+```
 This structural divergence manifests through three classic organizational measurement failure modes:
 
 * **Goodhart's Law**: "When a measure becomes a target, it ceases to be a good measure." When an agent or operational team is evaluated on a proxy metric, the system optimizes for the proxy at the expense of the overarching objective.  
@@ -136,34 +137,44 @@ This dynamic behavior introduces structural measurement challenges:
 
 To construct an enterprise-grade measurement architecture, traditional business and operational metrics must be re-engineered to capture agentic realities.
 
-### **5.1 Unit Economics and Cost Metrics**
+### 5.1 Unit Economics and Cost Metrics
 
 Traditional software cost models rely on fixed infrastructure overhead. In contrast, agentic AI operates on variable, context-dependent usage metrics.
 
-* **Cost per Completed Task (![][image5])**:  
-  ![][image6]  
-  Where ![][image7] captures raw input/output token costs across primary and child agents, ![][image8] quantifies the hourly cost of human oversight, and ![][image9] measures the downstream cost of correcting agent errors.  
-* **Cost per Accepted Outcome (![][image10])**:  
-  ![][image11]  
-  This metric exposes the true economic cost by dividing total token, system, and review costs by only those outputs that pass human or automated validation.  
-* **Token Multiplication Factor (![][image12])**: The ratio of total tokens consumed across an agentic trajectory to the minimum baseline token count required for direct task completion [11]. High values reveal inefficient reasoning loops or unoptimized context windows [11]. 
+**Cost per Completed Task ($C_{task}$)**
+$$C_{task} = C_{inference} + C_{infrastructure} + C_{human\_review} + C_{rework}$$
+Where $C_{inference}$ captures raw input/output token costs across primary and child agents, $C_{human\_review}$ quantifies the hourly cost of human oversight, and $C_{rework}$ measures the downstream cost of correcting agent errors.
 
-### **5.2 Quality and Operational Yield Metrics**
+**Cost per Accepted Outcome ($C_{accepted}$)**
+$$C_{accepted} = \frac{\sum \text{Total Workflow Expenditure}}{\text{Count of Successfully Accepted Outcomes}}$$
+This metric exposes the true economic cost by dividing total token, system, and review costs by only those outputs that pass human or automated validation.
 
-Adapting Six Sigma methodologies provides structural visibility into multi-step agent performance [9]. 
+**Token Multiplication Factor ($M_{token}$)**  
+The ratio of total tokens consumed across an agentic trajectory to the minimum baseline token count required for direct task completion. High values reveal inefficient reasoning loops or unoptimized context windows.
 
-* **First-Pass Yield (FPY)**: The percentage of agent executions that complete successfully without encountering errors, throwing exceptions, or requiring human correction.  
-* **Rolled First Pass Yield (RFPY)**: For an ![][image2]\-step agentic workflow where ![][image13] is the yield of step ![][image14]:  
-  ![][image15]  
-  In an agentic workflow with 5 sequential tool interactions each operating at a 90% step yield, the RFPY is ![][image16], highlighting that individual tool performance overstates end-to-end workflow reliability [7].  
-* **Percent Complete and Accurate (%C\&A)**: The proportion of agent outputs passed to downstream human workers or API interfaces that require zero modification, re-formatting, or contextual clarification [7]. 
+---
 
-### **5.3 Risk and Exposure Metrics**
+### 5.2 Quality and Operational Yield Metrics
 
-* **Failure Severity Exposure (![][image17])**:  
-  ![][image18]  
-  Where ![][image19] is the probability of agent failure, and ![][image20] is the financial, legal, or operational impact of that failure.  
-* **Mean Time to Detect (MTTD) and Mean Time to Contain (MTTC)**: Measures the temporal latency between an agent generating an erroneous or harmful action (e.g., sending an incorrect refund) and the operational control system detecting and halting the execution trace.
+Adapting Six Sigma methodologies provides structural visibility into multi-step agent performance.
+
+* **First-Pass Yield (FPY):** The percentage of agent executions that complete successfully without encountering errors, throwing exceptions, or requiring human correction.
+
+**Rolled First Pass Yield (RFPY)**  
+For an $N$-step agentic workflow where $Y_i$ is the yield of step $i$:
+$$\text{RFPY} = \prod_{i=1}^{N} Y_i$$
+In an agentic workflow with 5 sequential tool interactions each operating at a 90% step yield, the RFPY is $0.90^5 = 59.0\%$, highlighting that individual tool performance overstates end-to-end workflow reliability.
+
+* **Percent Complete and Accurate (%C&A):** The proportion of agent outputs passed to downstream human workers or API interfaces that require zero modification, re-formatting, or contextual clarification.
+
+### 5.3 Risk and Exposure Metrics
+
+**Failure Severity Exposure ($S_{exposure}$)**
+$$S_{exposure} = P(F) \times I(F)$$
+Where $P(F)$ is the probability of agent failure, and $I(F)$ is the financial, legal, or operational impact of that failure.
+
+**Mean Time to Detect (MTTD) and Mean Time to Contain (MTTC)**  
+Measures the temporal latency between an agent generating an erroneous or harmful action (e.g., sending an incorrect refund) and the operational control system detecting and halting the execution trace.
 
 ## **6\. Productivity Measurement and the Productivity Paradox**
 
