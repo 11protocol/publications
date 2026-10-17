@@ -1,3 +1,5 @@
+## 🛡️ LEGAL NOTICE
+>By continuing to access or use this document, you acknowledge that you have read, understood, and agree to be bound by the 11Protocol [Licensing & Intellectual Property terms](https://github.com/11protocol/publications/tree/main?tab=License-1-ov-file).
 # Evidence-Based Diagnostic and Mitigation Framework for Knowledge Readiness in Agentic AI
 
 *Citation markers [n] are numbered in order of first appearance and resolve to the References section. Source verification notes and the rationale for evidence ratings are in Appendix B.*
