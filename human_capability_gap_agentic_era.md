@@ -1,3 +1,6 @@
+## 🛡️ LEGAL NOTICE
+>By continuing to access or use this document, you acknowledge that you have read, understood, and agree to be bound by the 11Protocol [Licensing & Intellectual Property terms](https://github.com/11protocol/publications/tree/main?tab=License-1-ov-file).
+---
 # The Human Capability Gap in the Agentic Era
 ## Designing organizations that preserve, develop, and deploy human capability alongside AI
 
